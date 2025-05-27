@@ -682,9 +682,11 @@ function escapeRegex(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 }
 
-client.login(process.env.token).catch(() => {
+client.login("MTA2MzQxNzQxMTY0ODM1NjM5Mw.GbT0SZ.D2z6IBtVv3mdevTyw_w6fyhQPAB_SndQZsGc8c").catch(() => {
   throw new Error(`TOKEN OR INTENT INVALID`)
 })
 
 
-app.listen(kalash.port, () => console.log('Connecting...'))
+app.listen(3000, '0.0.0.0', () => {
+  console.log("Serveur démarré sur le port 3000")
+})
